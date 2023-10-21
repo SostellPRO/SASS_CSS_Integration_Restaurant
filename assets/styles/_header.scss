@@ -1,0 +1,69 @@
+header {
+    background: url(../img/bg-slider-06.jpg) center/cover;
+    padding-top: 25px;
+    .navbar {
+            color: $white;
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            h4{
+                @include h6;
+                color: $white;
+            }
+            ul.nav{
+                display: flex;
+                justify-content: space-around;
+                li {
+                    padding: 0 1.4rem;
+                    text-transform: uppercase;
+                    font-family: $font1;
+                    font-size: 0.65rem;
+                    &:hover {
+                        text-decoration: underline solid $white 1px;
+                        transform: scale(1.2);
+                        cursor: pointer;
+                    }
+                }
+            }
+            ul.icone{
+                display: flex;
+                li {
+                    padding: 0 0.5rem;
+                    &:hover {
+                        transform: scale(1.5);
+                        cursor: pointer;
+                    }
+                }
+            }
+    }
+.headerUp {
+    height: 50%;
+h2 {
+    @include h2;
+}
+h1 {
+    @include h1;
+}
+img {
+    font-size: 0.5rem;
+}
+p {
+    font-family: $font2;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+}
+}
+.headerDown {
+    display: flex;
+    .presentation {
+width: 50%;
+    }
+    .store{
+width: 50%;
+    }
+}
+}

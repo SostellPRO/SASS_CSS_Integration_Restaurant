@@ -10,9 +10,117 @@
   font-family: "Allura-regular";
   src: url(../fonts/Allura-Regular.ttf);
 }
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  padding-top: 25px;
+}
+header .navbar {
+  color: rgb(253, 253, 253);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+header .navbar h4 {
+  font-family: Allura-regular;
+  font-size: 2rem;
+  color: rgb(77, 59, 24);
+  color: rgb(253, 253, 253);
+}
+header .navbar ul.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header .navbar ul.nav li {
+  padding: 0 1.4rem;
+  text-transform: uppercase;
+  font-family: Poppins-Light;
+  font-size: 0.65rem;
+}
+header .navbar ul.nav li:hover {
+  -webkit-text-decoration: underline solid rgb(253, 253, 253) 1px;
+          text-decoration: underline solid rgb(253, 253, 253) 1px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+header .navbar ul.icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .navbar ul.icone li {
+  padding: 0 0.5rem;
+}
+header .navbar ul.icone li:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  cursor: pointer;
+}
+header .headerUp {
+  height: 50%;
+}
+header .headerUp h2 {
+  font-family: Allura-regular;
+  font-size: 4rem;
+  color: rgb(77, 59, 24);
+}
+header .headerUp h1 {
+  font-family: Roboto-Bold;
+  font-size: 4rem;
+  color: rgb(253, 253, 253);
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+header .headerUp img {
+  font-size: 0.5rem;
+}
+header .headerUp p {
+  font-family: Roboto-Medium;
+  color: rgb(253, 253, 253);
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
+header .headerDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .headerDown .presentation {
+  width: 50%;
+}
+header .headerDown .store {
+  width: 50%;
 }/*# sourceMappingURL=index.css.map */
