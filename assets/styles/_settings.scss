@@ -29,8 +29,8 @@ $font4:Roboto-Bold;
 $brown:rgb(30, 30, 30);
 $black: rgb(8, 8, 8);
 $yellow:rgb(161, 124, 50);
-$beige:rgb(214, 214, 214);
-$grey:grey;
+$beige:rgb(238, 236, 236);
+$grey:rgb(166, 163, 163);
 $white:rgb(253, 253, 253);
 
 * {
@@ -80,8 +80,8 @@ li {
 
 @mixin h5 {
     font-family: $font2;
-    font-size: 4rem;
-    color: $white;
+    font-size: 1.5rem;
+    color: $black;
     text-transform: uppercase;
 }
 

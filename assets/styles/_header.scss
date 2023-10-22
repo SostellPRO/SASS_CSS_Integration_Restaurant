@@ -60,7 +60,7 @@ header {
     font-family: $font2;
     color: $white;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
+    letter-spacing: 4rem;
     font-size: 0.7rem;
     font-weight: 300;
   }
@@ -68,9 +68,6 @@ header {
 .headerDown {
   display: flex;
   height: 40vh;
-  .presentation {
-    width: 50%;
-  }
   .store {
     width: 50%;
     img {
@@ -79,4 +76,53 @@ header {
       height: 100%;
     }
   }
+.presentation {
+      width: 50%;
+  background-color: $beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .containerPresentation {
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+  border: $yellow dashed 1px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h6 {
+@include h6;
+  }
+  h5 {
+@include h5;
+  }
+  .couverts {
+
+  }
+  p {
+font-family: $font1;
+font-weight: 0.1rem;
+  }
+  .portraitChef {
+border-radius: 50%;
+height: 30%;
+  }
+ .h9  {
+font-family: $font1;
+font-weight: 600;
+display: block;
+  }
+  .h10 {
+font-family: $font1;
+text-transform: uppercase;
+color: $grey;
+font-size: 0.75rem;
+font-weight: 600;
+display: block;
+}
+  }
+}
 }
