@@ -109,8 +109,7 @@ header .headerUp {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 5%;
 }
 header h1 {
   font-family: Roboto-Bold;
