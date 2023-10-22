@@ -28,7 +28,7 @@ $font4:Roboto-Bold;
 
 $brown:rgb(30, 30, 30);
 $black: rgb(8, 8, 8);
-$yellow:rgb(77, 59, 24);
+$yellow:rgb(161, 124, 50);
 $beige:rgb(214, 214, 214);
 $grey:grey;
 $white:rgb(253, 253, 253);
@@ -52,7 +52,7 @@ li {
 
 @mixin h1 {
     font-family: $font4;
-    font-size: 4rem;
+    font-size: 2rem;
     color: $white;
     text-transform: uppercase;
     letter-spacing: 1rem;
@@ -60,8 +60,9 @@ li {
 
 @mixin h2 {
     font-family: $font3;
-    font-size: 4rem;
+    font-size: 2rem;
     color: $yellow;
+    font-weight: 200;
 }
 
 @mixin h3 {
