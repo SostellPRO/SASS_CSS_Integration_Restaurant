@@ -226,6 +226,10 @@ header p {
 .carte {
   position: relative;
   background: url(../img/bg-menu-01.jpg) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 140vh;
+  margin: 0;
 }
 .carte::before {
   content: "";
@@ -235,4 +239,69 @@ header p {
   width: 100%;
   height: 40vh;
   background-color: rgb(30, 30, 30);
+  margin: 0;
+  z-index: -1;
+}
+.carte .navCarte {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+.carte .navCarte .titleMenu {
+  font-family: Allura-regular;
+  font-size: 2rem;
+  color: rgb(161, 124, 50);
+  font-size: 1.5rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.carte .navCarte .iconeMenu {
+  height: 30px;
+  width: 30px;
+  color: rgb(166, 163, 163);
+}
+.carte .navCarte ul {
+  color: rgb(166, 163, 163);
+  margin: 30px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: Poppins-Light;
+  font-size: 1rem;
+}
+.carte .navCarte ul li {
+  padding-bottom: 0.5rem;
+  border-bottom: solid 1px rgb(166, 163, 163);
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.carte .navCarte ul li:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  padding-bottom: 0.1rem;
+}
+.carte .plats {
+  width: 60%;
+  margin: auto;
+  background-color: rgb(238, 236, 236);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }/*# sourceMappingURL=index.css.map */
