@@ -55,11 +55,60 @@
       }
     }
           .plats {
-            width: 60%;
+            width: 50%;
             margin: auto;
         background-color: $beige;
+        font-family: $font1;
+        ul {
+        padding-top: 10%;
+        padding-bottom: 10%;    
+        border-top: solid $yellow 4px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "p1 p5"
+        "p2 p6"
+        "p3 p7"
+        "p4 p8"
+        ;
+        li{
+display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "c1 c2 c4"
+        "c1 c3 c4"
+        ;
+
+
+
+
+
+
+
+
+
+
+            .imgPlat{
+                             border-radius: 50%;
+                             height: 50%;
+                             grid-area: c1;
+            }
+            .titlePlat {
+                text-transform: uppercase;
+                  grid-area: c2;
+                  font-size: 0.5rem;
+            }
+            .recettePlat {
+                  grid-area: c3;
+                   font-size: 0.5rem;
+                   color: $grey;
+            }
+            .pricePlat {
+               grid-area: c4;
+            }
+        }
+      }
       }
 }
