@@ -165,9 +165,7 @@ header p {
 }
 .headerDown .presentation .containerPresentation {
   height: 90%;
-  width: 90%;
-  margin: auto;
-  padding: 40px;
+  width: 95%;
   border: rgb(161, 124, 50) dashed 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,31 +185,40 @@ header p {
   font-family: Allura-regular;
   font-size: 2rem;
   color: rgb(161, 124, 50);
+  font-size: 1.5rem;
 }
 .headerDown .presentation .containerPresentation h5 {
   font-family: Roboto-Medium;
   font-size: 1.5rem;
   color: rgb(8, 8, 8);
   text-transform: uppercase;
+  font-size: 1rem;
 }
-.headerDown .presentation .containerPresentation p {
+.headerDown .presentation .containerPresentation .couverts {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+.headerDown .presentation .containerPresentation .headerPresentation {
   font-family: Poppins-Light;
-  font-weight: 0.1rem;
+  padding-bottom: 2.5%;
+  font-size: 0.75rem;
+  width: 95%;
 }
 .headerDown .presentation .containerPresentation .portraitChef {
   border-radius: 50%;
-  height: 30%;
+  height: 15%;
 }
 .headerDown .presentation .containerPresentation .h9 {
   font-family: Poppins-Light;
   font-weight: 600;
   display: block;
+  font-size: 0.75rem;
 }
 .headerDown .presentation .containerPresentation .h10 {
   font-family: Poppins-Light;
   text-transform: uppercase;
   color: rgb(166, 163, 163);
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   font-weight: 600;
   display: block;
 }/*# sourceMappingURL=index.css.map */
