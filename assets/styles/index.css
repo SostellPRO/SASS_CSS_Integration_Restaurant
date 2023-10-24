@@ -464,6 +464,11 @@ header .subtitle {
   color: rgb(8, 8, 8);
   text-transform: uppercase;
 }
+.reservation .reservationForm .reservationRight .iconeReservation {
+  width: 40px;
+  height: 40px;
+  color: aqua;
+}
 .reservation .reservationForm .reservationRight form {
   width: 80%;
 }
@@ -507,7 +512,7 @@ header .subtitle {
   text-transform: uppercase;
   color: rgb(253, 253, 253);
   padding: 10px 15px;
-  margin: 30px;
+  margin: 10px;
   border-radius: 50px;
   font-family: Poppins-Light;
   letter-spacing: 0.5rem;
