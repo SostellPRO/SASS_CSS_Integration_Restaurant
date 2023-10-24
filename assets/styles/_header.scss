@@ -47,7 +47,7 @@ header {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 10%;
   }
   h1 {
     @include h1;
@@ -60,7 +60,7 @@ header {
     font-family: $font2;
     color: $white;
     text-transform: uppercase;
-    letter-spacing: 4rem;
+    letter-spacing: 1rem;
     font-size: 0.7rem;
     font-weight: 300;
   }

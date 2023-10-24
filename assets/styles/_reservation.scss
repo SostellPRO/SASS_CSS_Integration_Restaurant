@@ -1,0 +1,118 @@
+.reservation {
+  background: $brown;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .reservationForm {
+    display: flex;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    .reservationLeft {
+      width: 40%;
+      background-color: $black;
+
+      .containerLeft {
+        background-color: $black;
+        font-family: $font1;
+        padding: 5px;
+        border: dotted $grey 0.5px;
+        margin: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h6 {
+          @include h6;
+          padding-top: 10px;
+        }
+        h5 {
+          @include h5;
+          color: $white;
+          padding-bottom: 10px;
+          letter-spacing: 0.1rem;
+        }
+        .logoReservation {
+          font-size: 4rem;
+        }
+        .titleReservation {
+          color: $yellow;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+        p {
+          color: $white;
+          font-size: 0.75rem;
+        }
+      }
+    }
+    .reservationRight {
+      background-color: $beige;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      h4 {
+        @include h6;
+      }
+      h3 {
+        @include h5;
+      }
+      img {
+      }
+      form {
+        width: 80%;
+        select {
+          width: 169px;
+          height: 30px;
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;
+        }
+        .date {
+          width: 169px;
+          height: 30px;
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;
+        }
+        .time {
+          width: 169px;
+          height: 30px;
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;
+        }
+        input {
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;          
+        }
+      }
+      button {
+        background-color: $black;
+        display: block;
+        text-transform: uppercase;
+        color: $white;
+        padding: 10px 15px;
+        margin: 30px;
+        border-radius: 50px;
+        font-family: $font1;
+        letter-spacing: 0.5rem;
+      }
+    }
+  }
+}
