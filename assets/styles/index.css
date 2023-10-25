@@ -567,7 +567,6 @@ header .subtitle {
   font-size: 2rem;
   color: rgb(161, 124, 50);
   font-size: 2.5rem;
-  padding-top: 5%;
 }
 .event h3 {
   font-family: Roboto-Medium;
@@ -580,8 +579,9 @@ header .subtitle {
 .event .iconeEvent {
   height: 30px;
   width: 30px;
-  margin: 30px;
-  padding-bottom: 10%;
+  color: rgb(166, 163, 163);
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
 }
 .event .agenda {
   display: grid;
@@ -590,7 +590,7 @@ header .subtitle {
   margin: auto;
   grid-template-columns: 60% 40%;
   grid-template-rows: 50% 50%;
-  grid-template-areas: "ni th" " dj th";
+  grid-template-areas: "ni th" "dj th";
 }
 .event .agenda .rdv1 {
   grid-area: ni;
@@ -791,4 +791,81 @@ header .subtitle {
   margin-bottom: 5%;
   margin-right: 5%;
   margin-left: 5%;
+  position: relative;
+}
+.event .agenda .rdv3 .rdv3Container .rdvDate2 {
+  background-color: rgb(8, 8, 8);
+  width: 25%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  right: 50%;
+}
+.event .agenda .rdv3 .rdv3Container .rdvDate2 .rdvDay2 {
+  font-family: Poppins-Light;
+  font-weight: 700;
+  color: rgb(253, 253, 253);
+  font-size: 1.5rem;
+}
+.event .agenda .rdv3 .rdv3Container .rdvDate2 .rdvMonth2 {
+  font-family: Poppins-Light;
+  color: rgb(253, 253, 253);
+  font-size: 0.75rem;
+}
+.event .agenda .rdv3 .rdv3Container .rdvInfo2 {
+  font-family: Poppins-Light;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30%;
+}
+.event .agenda .rdv3 .rdv3Container .rdvInfo2 .titleInfo2 {
+  font-size: 1rem;
+  color: rgb(8, 8, 8);
+  width: 80%;
+}
+.event .agenda .rdv3 .rdv3Container .rdvInfo2 .eventInfo2 {
+  color: rgb(166, 163, 163);
+  font-size: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.event .agenda .rdv3 .rdv3Container .btnInfo2 {
+  text-transform: uppercase;
+  border: none;
+  color: rgb(8, 8, 8);
+  cursor: pointer;
+  padding-top: 7.5%;
+}
+.event .agenda .rdv3 .rdv3Container .btnInfo2:hover {
+  -webkit-text-decoration: underline solid rgb(8, 8, 8) 1px;
+          text-decoration: underline solid rgb(8, 8, 8) 1px;
 }/*# sourceMappingURL=index.css.map */
