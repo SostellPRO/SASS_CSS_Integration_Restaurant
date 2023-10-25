@@ -1,6 +1,6 @@
 .reservation {
   background: $brown;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
   .reservationForm {
     display: flex;
     width: 80%;
-    height: 50%;
+    height: 60%;
     margin: auto;
     .reservationLeft {
       width: 30%;
