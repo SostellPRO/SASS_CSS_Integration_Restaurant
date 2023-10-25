@@ -3,17 +3,38 @@ height: 100vh;
 background-color: $brown;
 h4 {
 @include h4;
+font-size: 2.5rem;
+padding-top: 5%
 }
 h3 {
 @include h3;
+font-size: 1.75rem;
+letter-spacing: 0.25rem;
 }
 .iconeEvent {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
+    margin: 30px;
+    padding-bottom: 10%;
 }
 .agenda {
+    display: grid;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "ni th"
+    " dj th"
+    ;
     .rdv1{
+        grid-area: ni;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 1fr;
 .rdvDate{
+        background: url(../img/event-01.jpg) center/cover;
     .rdvDay {}
 }
 .rdvInfo{
@@ -23,7 +44,12 @@ h3 {
 }
     }
     .rdv2{
+        grid-area: dj;
+                display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 1fr;
 .rdvDate{
+            background: url(../img/event-02.jpg) center/cover;
     .rdvDay {}
 }
 .rdvInfo{
@@ -33,7 +59,10 @@ h3 {
 }
     }
     .rdv3{
+        grid-area: th;
+                    background: url(../img/event-03.jpg) center/cover;
 .rdv3Container {
+
     .rdvDate2 {
         .rdvDay2 {}
     }
