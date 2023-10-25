@@ -572,4 +572,8 @@ header .subtitle {
   font-size: 2rem;
   color: rgb(253, 253, 253);
   text-transform: uppercase;
+}
+.event .iconeEvent {
+  height: 20px;
+  width: 20px;
 }/*# sourceMappingURL=index.css.map */

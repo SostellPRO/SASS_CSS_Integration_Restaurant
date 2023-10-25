@@ -7,4 +7,42 @@ h4 {
 h3 {
 @include h3;
 }
+.iconeEvent {
+    height: 20px;
+    width: 20px;
+}
+.agenda {
+    .rdv1{
+.rdvDate{
+    .rdvDay {}
+}
+.rdvInfo{
+    .titleInfo {}
+    .eventInfo {}
+    .btnInfo {}
+}
+    }
+    .rdv2{
+.rdvDate{
+    .rdvDay {}
+}
+.rdvInfo{
+    .titleInfo {}
+    .eventInfo {}
+    .btnInfo {}
+}
+    }
+    .rdv3{
+.rdv3Container {
+    .rdvDate2 {
+        .rdvDay2 {}
+    }
+}
+.rdvInfo2 {
+    .titleInfo2 {}
+    .eventInfo2 {}
+    .btnInfo2 {} 
+}
+    }
+}
 }
