@@ -613,7 +613,7 @@ header .subtitle {
   text-align: center;
 }
 .event .agenda .rdv1 .rdvDate .rdvContainer {
-  background-color: rgb(8, 8, 8);
+  background-color: rgb(30, 30, 30);
   width: 50%;
   height: 50%;
   display: -webkit-box;
@@ -706,7 +706,7 @@ header .subtitle {
   text-align: center;
 }
 .event .agenda .rdv2 .rdvDate .rdvContainer {
-  background-color: rgb(8, 8, 8);
+  background-color: rgb(30, 30, 30);
   width: 50%;
   height: 50%;
   display: -webkit-box;
@@ -794,7 +794,7 @@ header .subtitle {
   position: relative;
 }
 .event .agenda .rdv3 .rdv3Container .rdvDate2 {
-  background-color: rgb(8, 8, 8);
+  background-color: rgb(30, 30, 30);
   width: 25%;
   height: 25%;
   display: -webkit-box;
@@ -873,12 +873,13 @@ header .subtitle {
 .conclusion {
   height: 100vh;
   background: url(../img/gmap.jpg) no-repeat center;
-  background-size: 90% 30%;
+  background-size: 80% 30%;
   background-color: rgb(30, 30, 30);
+  position: relative;
 }
 .conclusion .note {
   width: 80%;
-  height: 45%;
+  height: 42.5%;
   margin: auto;
   background-color: rgb(238, 236, 236);
   position: relative;
@@ -907,4 +908,127 @@ header .subtitle {
   color: rgb(161, 124, 50);
   font-size: 0.75rem;
   padding-top: 1.5%;
+}
+.conclusion footer {
+  width: 80%;
+  margin: auto;
+  background: url(../img/bg-footer.jpg) center/cover no-repeat;
+  background-size: 100% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.conclusion footer .leftFooter {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-left: 5%;
+}
+.conclusion footer .leftFooter .titleLeftFooter {
+  font-family: Allura-regular;
+  font-size: 2rem;
+  color: rgb(161, 124, 50);
+  padding-top: 5%;
+}
+.conclusion footer .leftFooter .textLeftFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins-Light;
+  color: rgb(166, 163, 163);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  text-align: left;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  padding-bottom: 5%;
+}
+.conclusion footer .rightFooter {
+  width: 50%;
+  color: rgb(253, 253, 253);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.conclusion footer .rightFooter .newsRight {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.conclusion footer .rightFooter .newsRight .newsTitle {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: Poppins-Light;
+  padding-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.conclusion footer .rightFooter .newsRight .newsInput {
+  background-color: rgb(30, 30, 30);
+  border: rgba(42, 40, 40, 0.62) solid 0.1px;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  padding: 4px;
+}
+.conclusion footer .rightFooter .followRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5%;
+}
+.conclusion footer .rightFooter .followRight .followTitle {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: Poppins-Light;
+}
+.conclusion footer .rightFooter .followRight .networkList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.conclusion footer .rightFooter .followRight .networkList .itemRight {
+  color: rgb(166, 163, 163);
+  padding: 0 20%;
 }/*# sourceMappingURL=index.css.map */
