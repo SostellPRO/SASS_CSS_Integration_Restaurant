@@ -1,77 +1,194 @@
 .event {
-height: 100vh;
-background-color: $brown;
-h4 {
-@include h4;
-font-size: 2.5rem;
-padding-top: 5%
-}
-h3 {
-@include h3;
-font-size: 1.75rem;
-letter-spacing: 0.25rem;
-}
-.iconeEvent {
+  height: 100vh;
+  background-color: $brown;
+  h4 {
+    @include h4;
+    font-size: 2.5rem;
+    padding-top: 5%;
+  }
+  h3 {
+    @include h3;
+    font-size: 1.75rem;
+    letter-spacing: 0.25rem;
+  }
+  .iconeEvent {
     height: 30px;
     width: 30px;
     margin: 30px;
     padding-bottom: 10%;
-}
-.agenda {
+  }
+  .agenda {
     display: grid;
     width: 80%;
-    height: 60%;
+    height: 40%;
     margin: auto;
     grid-template-columns: 60% 40%;
     grid-template-rows: 50% 50%;
-    grid-template-areas: 
-    "ni th"
-    " dj th"
-    ;
-    .rdv1{
-        grid-area: ni;
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 1fr;
-.rdvDate{
+    grid-template-areas:
+      "ni th"
+      " dj th";
+    .rdv1 {
+      grid-area: ni;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 1fr;
+      margin: 5px;
+      .rdvDate {
         background: url(../img/event-01.jpg) center/cover;
-    .rdvDay {}
-}
-.rdvInfo{
-    .titleInfo {}
-    .eventInfo {}
-    .btnInfo {}
-}
-    }
-    .rdv2{
-        grid-area: dj;
-                display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 1fr;
-.rdvDate{
-            background: url(../img/event-02.jpg) center/cover;
-    .rdvDay {}
-}
-.rdvInfo{
-    .titleInfo {}
-    .eventInfo {}
-    .btnInfo {}
-}
-    }
-    .rdv3{
-        grid-area: th;
-                    background: url(../img/event-03.jpg) center/cover;
-.rdv3Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .rdvContainer {
+                  background-color: $black;
+                  width: 50%;
+                  height: 50%;
+                          display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        .rdvDay {
+          font-family: $font1;
+          font-weight: 700;
+          color: $white;
+          font-size: 1.5rem;
+        }
+        .rdvMonth {
+                      font-family: $font1;
+          color: $white;
+          font-size: 0.75rem;
+        }
+        }
+      }
+      .rdvInfo {
+        background-color: $beige;
+        font-family: $font1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5%;
+        .titleInfo {
+            font-size: 1rem;
+        }
+        .eventInfo {
+            color: $grey;
+            font-size: 0.7rem;
+            display: flex;
+            margin-top: 4%;
+            margin-bottom: 4%;
+            p{
+                padding-right: 20px;
+            }
 
-    .rdvDate2 {
-        .rdvDay2 {}
+        }
+        .btnInfo {
+            text-transform: uppercase;
+            border: none;
+            color: $black;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline solid $black 1px;
+                ;
+            }
+        }
+      }
     }
-}
-.rdvInfo2 {
-    .titleInfo2 {}
-    .eventInfo2 {}
-    .btnInfo2 {} 
-}
+    .rdv2 {
+      grid-area: dj;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 1fr;
+      margin: 5px;
+      .rdvDate {
+        background: url(../img/event-02.jpg) center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      .rdvContainer {
+                  background-color: $black;
+                  width: 50%;
+                  height: 50%;
+                          display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        .rdvDay {
+          font-family: $font1;
+          font-weight: 700;
+          color: $white;
+          font-size: 1.5rem;
+        }
+        .rdvMonth {
+                      font-family: $font1;
+          color: $white;
+          font-size: 0.75rem;
+        }
+        }
+      }
+      .rdvInfo {
+        background-color: $beige;
+        font-family: $font1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5%;
+        .titleInfo {
+                        font-size: 1rem;
+        }
+        .eventInfo {
+                        color: $grey;
+            font-size: 0.7rem;
+            display: flex;
+            margin-top: 4%;
+            margin-bottom: 4%;
+                        p{
+                padding-right: 20px;
+            }
+
+        }
+        .btnInfo {
+                        text-transform: uppercase;
+            border: none;
+            color: $black;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline solid $black 1px;
+                ;
+            }
+        }
+      }
     }
-}
+    .rdv3 {
+      grid-area: th;
+      background: url(../img/event-03.jpg) center/cover;
+      margin: 5px;
+      .rdv3Container {
+        background-color: $beige;
+        width: 90%;
+        height: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+
+        .rdvDate2 {
+          .rdvDay2 {
+          }
+        }
+      }
+      .rdvInfo2 {
+        .titleInfo2 {
+        }
+        .eventInfo2 {
+        }
+        .btnInfo2 {
+        }
+      }
+    }
+  }
 }

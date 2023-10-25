@@ -586,7 +586,7 @@ header .subtitle {
 .event .agenda {
   display: grid;
   width: 80%;
-  height: 60%;
+  height: 40%;
   margin: auto;
   grid-template-columns: 60% 40%;
   grid-template-rows: 50% 50%;
@@ -597,20 +597,198 @@ header .subtitle {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 1fr;
+  margin: 5px;
 }
 .event .agenda .rdv1 .rdvDate {
   background: url(../img/event-01.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.event .agenda .rdv1 .rdvDate .rdvContainer {
+  background-color: rgb(8, 8, 8);
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.event .agenda .rdv1 .rdvDate .rdvContainer .rdvDay {
+  font-family: Poppins-Light;
+  font-weight: 700;
+  color: rgb(253, 253, 253);
+  font-size: 1.5rem;
+}
+.event .agenda .rdv1 .rdvDate .rdvContainer .rdvMonth {
+  font-family: Poppins-Light;
+  color: rgb(253, 253, 253);
+  font-size: 0.75rem;
+}
+.event .agenda .rdv1 .rdvInfo {
+  background-color: rgb(238, 236, 236);
+  font-family: Poppins-Light;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+}
+.event .agenda .rdv1 .rdvInfo .titleInfo {
+  font-size: 1rem;
+}
+.event .agenda .rdv1 .rdvInfo .eventInfo {
+  color: rgb(166, 163, 163);
+  font-size: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.event .agenda .rdv1 .rdvInfo .eventInfo p {
+  padding-right: 20px;
+}
+.event .agenda .rdv1 .rdvInfo .btnInfo {
+  text-transform: uppercase;
+  border: none;
+  color: rgb(8, 8, 8);
+  cursor: pointer;
+}
+.event .agenda .rdv1 .rdvInfo .btnInfo:hover {
+  -webkit-text-decoration: underline solid rgb(8, 8, 8) 1px;
+          text-decoration: underline solid rgb(8, 8, 8) 1px;
 }
 .event .agenda .rdv2 {
   grid-area: dj;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 1fr;
+  margin: 5px;
 }
 .event .agenda .rdv2 .rdvDate {
   background: url(../img/event-02.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.event .agenda .rdv2 .rdvDate .rdvContainer {
+  background-color: rgb(8, 8, 8);
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.event .agenda .rdv2 .rdvDate .rdvContainer .rdvDay {
+  font-family: Poppins-Light;
+  font-weight: 700;
+  color: rgb(253, 253, 253);
+  font-size: 1.5rem;
+}
+.event .agenda .rdv2 .rdvDate .rdvContainer .rdvMonth {
+  font-family: Poppins-Light;
+  color: rgb(253, 253, 253);
+  font-size: 0.75rem;
+}
+.event .agenda .rdv2 .rdvInfo {
+  background-color: rgb(238, 236, 236);
+  font-family: Poppins-Light;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+}
+.event .agenda .rdv2 .rdvInfo .titleInfo {
+  font-size: 1rem;
+}
+.event .agenda .rdv2 .rdvInfo .eventInfo {
+  color: rgb(166, 163, 163);
+  font-size: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.event .agenda .rdv2 .rdvInfo .eventInfo p {
+  padding-right: 20px;
+}
+.event .agenda .rdv2 .rdvInfo .btnInfo {
+  text-transform: uppercase;
+  border: none;
+  color: rgb(8, 8, 8);
+  cursor: pointer;
+}
+.event .agenda .rdv2 .rdvInfo .btnInfo:hover {
+  -webkit-text-decoration: underline solid rgb(8, 8, 8) 1px;
+          text-decoration: underline solid rgb(8, 8, 8) 1px;
 }
 .event .agenda .rdv3 {
   grid-area: th;
   background: url(../img/event-03.jpg) center/cover;
+  margin: 5px;
+}
+.event .agenda .rdv3 .rdv3Container {
+  background-color: rgb(238, 236, 236);
+  width: 90%;
+  height: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
 }/*# sourceMappingURL=index.css.map */
