@@ -1,0 +1,55 @@
+.conclusion {
+    height: 100vh;
+    background: url(../img/gmap.jpg) no-repeat center;
+    background-size: 90% 30%;
+    background-color: $brown;
+  .note {
+    width: 80%;
+    height: 45%;
+    margin: auto;
+    background-color: $beige;
+    position: relative;
+            font-family: $font1;
+    .imgEnd {
+border-radius: 50%;
+height: 18%;
+position: absolute;
+transform: translateY(-50%);
+    }
+    .textEnd {
+        padding-top: 10%;
+        width: 80%;
+        margin: auto;
+        line-height: 1.75rem;
+        padding-bottom: 5%;
+    }
+    .nameEnd {
+        font-weight: 400;
+        font-size: 1.25rem;
+        padding-bottom: 10%;
+    }
+    .jobEnd {
+        color: $yellow;
+        font-size: 0.75rem;
+        padding-top: 1.5%;
+    }
+  }
+    footer {
+        .leftFooter {
+            .titleLeftFooter {}
+            .textLeftFooter {}
+        }
+        .rightFooter {
+            newsRight {
+                .newsTitle {}
+                .newsInput {}
+            }
+        }
+        .followRight {
+            .followTitle {}
+            .networkList {
+                .itemRight {}
+            }
+        }
+    }
+}
