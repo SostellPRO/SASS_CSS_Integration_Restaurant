@@ -1,0 +1,10 @@
+.event {
+height: 100vh;
+background-color: $brown;
+h4 {
+@include h4;
+}
+h3 {
+@include h3;
+}
+}

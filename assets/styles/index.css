@@ -385,15 +385,25 @@ header .subtitle {
   margin: auto;
 }
 .reservation .reservationForm .reservationLeft {
-  width: 40%;
+  width: 30%;
   background-color: rgb(8, 8, 8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .reservation .reservationForm .reservationLeft .containerLeft {
   background-color: rgb(8, 8, 8);
   font-family: Poppins-Light;
   padding: 5px;
   border: dotted rgb(166, 163, 163) 0.5px;
-  margin: 10%;
+  width: 90%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,6 +462,7 @@ header .subtitle {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  width: 70%;
 }
 .reservation .reservationForm .reservationRight h4 {
   font-family: Allura-regular;
@@ -465,14 +476,17 @@ header .subtitle {
   text-transform: uppercase;
 }
 .reservation .reservationForm .reservationRight .iconeReservation {
-  width: 40px;
-  height: 40px;
-  color: aqua;
+  width: 20px;
+  height: 20px;
 }
-.reservation .reservationForm .reservationRight form {
+.reservation .reservationForm .reservationRight .rdvform {
   width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "se da ti" "na ph em";
 }
-.reservation .reservationForm .reservationRight form select {
+.reservation .reservationForm .reservationRight .rdvform .rdvse {
   width: 169px;
   height: 30px;
   border: none;
@@ -480,8 +494,9 @@ header .subtitle {
   background-color: rgb(238, 236, 236);
   border-bottom: 1px rgb(179, 176, 176) solid;
   padding-bottom: 10px;
+  grid-area: se;
 }
-.reservation .reservationForm .reservationRight form .date {
+.reservation .reservationForm .reservationRight .rdvform .date {
   width: 169px;
   height: 30px;
   border: none;
@@ -489,8 +504,9 @@ header .subtitle {
   background-color: rgb(238, 236, 236);
   border-bottom: 1px rgb(179, 176, 176) solid;
   padding-bottom: 10px;
+  grid-area: da;
 }
-.reservation .reservationForm .reservationRight form .time {
+.reservation .reservationForm .reservationRight .rdvform .time {
   width: 169px;
   height: 30px;
   border: none;
@@ -498,15 +514,39 @@ header .subtitle {
   background-color: rgb(238, 236, 236);
   border-bottom: 1px rgb(179, 176, 176) solid;
   padding-bottom: 10px;
+  grid-area: ti;
 }
-.reservation .reservationForm .reservationRight form input {
+.reservation .reservationForm .reservationRight .rdvform .input1 {
+  width: 169px;
+  height: 30px;
   border: none;
   margin: 20px 5px;
   background-color: rgb(238, 236, 236);
   border-bottom: 1px rgb(179, 176, 176) solid;
   padding-bottom: 10px;
+  grid-area: na;
 }
-.reservation .reservationForm .reservationRight button {
+.reservation .reservationForm .reservationRight .rdvform .input2 {
+  width: 169px;
+  height: 30px;
+  border: none;
+  margin: 20px 5px;
+  background-color: rgb(238, 236, 236);
+  border-bottom: 1px rgb(179, 176, 176) solid;
+  padding-bottom: 10px;
+  grid-area: ph;
+}
+.reservation .reservationForm .reservationRight .rdvform .input3 {
+  width: 169px;
+  height: 30px;
+  border: none;
+  margin: 20px 5px;
+  background-color: rgb(238, 236, 236);
+  border-bottom: 1px rgb(179, 176, 176) solid;
+  padding-bottom: 10px;
+  grid-area: em;
+}
+.reservation .reservationForm .reservationRight .btnrdv {
   background-color: rgb(8, 8, 8);
   display: block;
   text-transform: uppercase;
@@ -516,4 +556,20 @@ header .subtitle {
   border-radius: 50px;
   font-family: Poppins-Light;
   letter-spacing: 0.5rem;
+}
+
+.event {
+  height: 100vh;
+  background-color: rgb(30, 30, 30);
+}
+.event h4 {
+  font-family: Allura-regular;
+  font-size: 2rem;
+  color: rgb(161, 124, 50);
+}
+.event h3 {
+  font-family: Roboto-Medium;
+  font-size: 2rem;
+  color: rgb(253, 253, 253);
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */

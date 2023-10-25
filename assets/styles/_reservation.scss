@@ -11,15 +11,19 @@
     height: 50%;
     margin: auto;
     .reservationLeft {
-      width: 40%;
+      width: 30%;
       background-color: $black;
+      display: flex;
+       justify-content: center;
+        align-items: center;
 
       .containerLeft {
         background-color: $black;
         font-family: $font1;
         padding: 5px;
         border: dotted $grey 0.5px;
-        margin: 10%;
+        width: 90%;
+        height: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -57,6 +61,7 @@
       align-items: center;
       flex-direction: column;
       text-align: center;
+      width: 70%;
       h4 {
         @include h6;
       }
@@ -64,11 +69,19 @@
         @include h5;
       }
       .iconeReservation {
-        width: 40px;
-        height: 40px;
-      form {
+        width: 20px;
+        height: 20px;
+            }
+      .rdvform {
         width: 80%;
-        select {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "se da ti"
+        "na ph em"
+        ;
+        .rdvse {
           width: 169px;
           height: 30px;
           border: none;
@@ -76,6 +89,7 @@
           background-color: $beige;
           border-bottom: 1px rgb(179, 176, 176) solid;
 padding-bottom: 10px;
+grid-area: se;
         }
         .date {
           width: 169px;
@@ -85,6 +99,7 @@ padding-bottom: 10px;
           background-color: $beige;
           border-bottom: 1px rgb(179, 176, 176) solid;
 padding-bottom: 10px;
+grid-area: da;
         }
         .time {
           width: 169px;
@@ -94,16 +109,40 @@ padding-bottom: 10px;
           background-color: $beige;
           border-bottom: 1px rgb(179, 176, 176) solid;
 padding-bottom: 10px;
+grid-area: ti;
         }
-        input {
+        .input1 {
+          width: 169px;
+          height: 30px;
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;   
+grid-area: na;       
+        }
+       .input2 {
+          width: 169px;
+          height: 30px;
           border: none;
           margin: 20px 5px;
           background-color: $beige;
           border-bottom: 1px rgb(179, 176, 176) solid;
 padding-bottom: 10px;          
+grid-area: ph;
+        }
+        .input3 {
+          width: 169px;
+          height: 30px;
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;     
+grid-area: em;     
         }
       }
-      button {
+      .btnrdv {
         background-color: $black;
         display: block;
         text-transform: uppercase;
@@ -114,6 +153,7 @@ padding-bottom: 10px;
         font-family: $font1;
         letter-spacing: 0.5rem;
       }
-    }
+
   }
+}
 }
