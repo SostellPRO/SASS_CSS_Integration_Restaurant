@@ -1,3 +1,3 @@
-Allura Regular
-Poppins Medium
-Roboto Light
+Allura Regular                       //cursive
+Poppins Medium                 // art deco gras
+Roboto Light                        // imprimerie 

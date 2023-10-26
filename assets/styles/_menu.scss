@@ -1,0 +1,122 @@
+.carte {
+  position: relative;
+  background: url(../img/bg-menu-01.jpg) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 120vh;
+  background-color: $brown;
+  padding-top: 10%;
+  .navCarte {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    .titleMenu {
+      @include h6;
+      font-size: 1.5rem;
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+    .iconeMenu {
+      height: 30px;
+      width: 30px;
+      color: $grey;
+    }
+    ul {
+      color: $grey;
+      margin: 30px 10px;
+      display: flex;
+      width: 90%;
+      justify-content: space-evenly;
+      font-family: $font1;
+      font-size: 1rem;
+      li {
+        padding-bottom: 0.3rem;
+        border-bottom: solid 1px $grey;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+          transform: scale(1.2);
+          padding-bottom: 0.1rem;
+        }
+      }
+    }
+    @media screen and (max-width: 700px) {
+      ul {
+        font-size: 0.60rem;
+        width: 100%;
+      }
+    }
+  }
+  .plats {
+    width: 60%;
+    margin: auto;
+    background-color: $beige;
+    font-family: $font1;
+    ul {
+      padding-top: 2%;
+      padding-bottom: 2%;
+      border-top: solid $yellow 4px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "p1 p5"
+        "p2 p6"
+        "p3 p7"
+        "p4 p8";
+
+    @media screen and (max-width: 680px) {
+      grid-template-columns: 1fr;
+      grid-template-areas:         
+      "p1 "
+        "p2 "
+        "p3"
+        "p4"
+        "p5"
+        "p6"
+        "p7"
+        " p8"
+        ;
+    }
+      li {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 1fr;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: solid 1px rgb(216, 216, 216);
+    align-items: center;
+        .blocPlat {
+          display: flex;
+          align-items: center;
+          .imgPlat {
+            border-radius: 50%;
+            width: 20%;
+            padding-right: 10px;
+          }
+          .textPlat {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            .titlePlat {
+              text-transform: uppercase;
+              font-size: 0.75rem;
+            }
+            .recettePlat {
+              font-size: 0.75rem;
+              color: $grey;
+            }
+          }
+        }
+        .pricePlat {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

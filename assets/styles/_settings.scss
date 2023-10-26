@@ -1,0 +1,107 @@
+ //fonts
+ 
+ @font-face {
+        font-family: "Poppins-Light";
+        src: url(../fonts/Poppins-Light.ttf);
+    }
+
+    @font-face {
+        font-family: "Roboto-Medium";
+        src: url(../fonts/Roboto-Medium.ttf);
+    }
+
+@font-face {
+    font-family: "Allura-regular";
+    src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+$font1:Poppins-Light;
+$font2:Roboto-Medium;
+$font3:Allura-regular;
+$font4:Roboto-Bold;
+
+//colors theme
+
+$brown:rgb(30, 30, 30);
+$black: rgb(8, 8, 8);
+$yellow:rgb(161, 124, 50);
+$beige:rgb(238, 236, 236);
+$grey:rgb(166, 163, 163);
+$white:rgb(253, 253, 253);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  text-align:center;            
+  max-width: 1300px;                                            
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+@mixin h1 {
+    font-family: $font4;
+    font-size: 2rem;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+@mixin h2 {
+    font-family: $font3;
+    font-size: 2rem;
+    color: $yellow;
+    font-weight: 200;
+}
+
+@mixin h3 {
+    font-family: $font2;
+    font-size: 2rem;
+    color: $white;
+    text-transform: uppercase;
+}
+
+@mixin h4 {
+    font-family: $font3;
+    font-size: 2rem;
+    color: $yellow;
+}
+
+@mixin h5 {
+    font-family: $font2;
+    font-size: 1rem;
+    color: $black;
+    text-transform: uppercase;
+}
+
+@mixin h6 {
+        font-family: $font3;
+    font-size: 2rem;
+    color: $yellow;
+}
+
+@mixin h7 {
+    font-family: $font3;
+    font-size: 1rem;
+    color: $black;
+}
+
+@mixin h8 {
+     font-family: $font3;
+    font-size: 1rem;
+    color: $yellow;
+    text-transform: uppercase;
+}
+
+

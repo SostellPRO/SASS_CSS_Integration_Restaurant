@@ -1,0 +1,205 @@
+.reservation {
+  background: $brown;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  .reservationForm {
+    display: flex;
+    width: 80%;
+    height: 60%;
+    margin: 0 125.297px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+@media screen and (max-width:1080px) {
+  flex-direction: column;
+}
+
+    .reservationLeft {
+      width: 30%;
+      background-color: $black;
+      display: flex;
+       justify-content: center;
+        align-items: center;
+          @media screen and (max-width:1080px) {
+  width: 100%;
+  height: 50%;
+}
+        
+
+      .containerLeft {
+        background-color: $black;
+        font-family: $font1;
+        padding: 5px;
+        border: dotted $grey 0.5px;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h6 {
+          @include h6;
+          padding-top: 10px;
+        }
+        h5 {
+          @include h5;
+          color: $white;
+          padding-bottom: 10px;
+          letter-spacing: 0.1rem;
+        }
+        .logoReservation {
+          font-size: 4rem;
+        }
+        .titleReservation {
+          color: $yellow;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+        p {
+          color: $white;
+          font-size: 0.75rem;
+        }
+      }
+    }
+              @media screen and (max-width:1080px) {
+h6 {
+  display: none;
+}
+h5 {
+  display: none;
+}
+.logoReservation {
+  display: none;
+}
+}
+    .reservationRight {
+      background-color: $beige;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      width: 70%;
+      @media screen and (max-width:1080px){
+        width: 100%;
+      }
+      h4 {
+        @include h6;
+      }
+      h3 {
+        @include h5;
+      }
+      .iconeReservation {
+        width: 20px;
+        height: 20px;
+            }
+      .rdvform {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "se da ti"
+        "na ph em"
+        ;
+        @media screen and (max-width:1080px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 80%;
+      } 
+        .rdvse {
+          width: 169px;
+          height: 30px;
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;
+grid-area: se;
+        }
+
+        .date {
+          width: 169px;
+          height: 30px;
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;
+grid-area: da;
+        }
+        .time {
+          width: 169px;
+          height: 30px;
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;
+grid-area: ti;
+        }
+        .input1 {
+          width: 169px;
+          height: 30px;
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;   
+grid-area: na;      
+        @media screen and (max-width:1080px) {
+  padding-bottom: 5px;
+} 
+        }
+       .input2 {
+          width: 169px;
+          height: 30px;
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;          
+grid-area: ph;
+        @media screen and (max-width:1080px) {
+  padding-bottom: 5px;
+}
+        }
+        .input3 {
+          width: 169px;
+          height: 30px;
+          border: none;
+          margin: 20px 5px;
+          background-color: $beige;
+          border-bottom: 1px rgb(179, 176, 176) solid;
+padding-bottom: 10px;     
+grid-area: em;     
+        @media screen and (max-width:1080px) {
+  padding-bottom: 5px;
+}
+        }
+      }
+      .btnrdv {
+        background-color: $black;
+        display: block;
+        text-transform: uppercase;
+        color: $white;
+        padding: 10px 15px;
+        margin: 10px;
+        border-radius: 50px;
+        font-family: $font1;
+        letter-spacing: 0.5rem;
+      }
+
+  }
+}
+}
