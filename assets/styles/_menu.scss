@@ -43,6 +43,12 @@
         }
       }
     }
+    @media screen and (max-width: 700px) {
+      ul {
+        font-size: 0.60rem;
+        width: 100%;
+      }
+    }
   }
   .plats {
     width: 60%;
@@ -61,6 +67,20 @@
         "p2 p6"
         "p3 p7"
         "p4 p8";
+
+    @media screen and (max-width: 680px) {
+      grid-template-columns: 1fr;
+      grid-template-areas:         
+      "p1 "
+        "p2 "
+        "p3"
+        "p4"
+        "p5"
+        "p6"
+        "p7"
+        " p8"
+        ;
+    }
       li {
         display: grid;
         grid-template-columns: 80% 20%;

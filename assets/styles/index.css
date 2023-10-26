@@ -77,6 +77,11 @@ header .navbar ul.nav li:hover {
           transform: scale(1.2);
   cursor: pointer;
 }
+@media screen and (max-width: 680px) {
+  header .navbar ul.nav {
+    display: none;
+  }
+}
 header .navbar ul.icone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,6 +94,12 @@ header .navbar ul.icone li:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   cursor: pointer;
+}
+@media screen and (max-width: 680px) {
+  header .navbar ul.icone li {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
 }
 header .headerUp {
   font-family: Allura-regular;
@@ -146,7 +157,16 @@ header .subtitle {
   width: 100%;
   height: 100%;
 }
-.headerDown .presentation {
+
+@media (max-width: 700px) {
+  .headerDown .store {
+    display: none;
+  }
+  .headerDown .presentation {
+    width: 100%;
+  }
+}
+.presentation {
   width: 50%;
   background-color: rgb(238, 236, 236);
   display: -webkit-box;
@@ -163,7 +183,7 @@ header .subtitle {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.headerDown .presentation .containerPresentation {
+.presentation .containerPresentation {
   height: 90%;
   width: 95%;
   border: rgb(161, 124, 50) dashed 1px;
@@ -181,40 +201,40 @@ header .subtitle {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.headerDown .presentation .containerPresentation h6 {
+.presentation .containerPresentation h6 {
   font-family: Allura-regular;
   font-size: 2rem;
   color: rgb(161, 124, 50);
   font-size: 1.5rem;
 }
-.headerDown .presentation .containerPresentation h5 {
+.presentation .containerPresentation h5 {
   font-family: Roboto-Medium;
   font-size: 1rem;
   color: rgb(8, 8, 8);
   text-transform: uppercase;
   font-size: 1rem;
 }
-.headerDown .presentation .containerPresentation .couverts {
+.presentation .containerPresentation .couverts {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
-.headerDown .presentation .containerPresentation .headerPresentation {
+.presentation .containerPresentation .headerPresentation {
   font-family: Poppins-Light;
   padding-bottom: 2.5%;
   font-size: 0.75rem;
   width: 95%;
 }
-.headerDown .presentation .containerPresentation .portraitChef {
+.presentation .containerPresentation .portraitChef {
   border-radius: 50%;
   height: 15%;
 }
-.headerDown .presentation .containerPresentation .h9 {
+.presentation .containerPresentation .h9 {
   font-family: Poppins-Light;
   font-weight: 600;
   display: block;
   font-size: 0.75rem;
 }
-.headerDown .presentation .containerPresentation .h10 {
+.presentation .containerPresentation .h10 {
   font-family: Poppins-Light;
   text-transform: uppercase;
   color: rgb(166, 163, 163);
@@ -287,6 +307,12 @@ header .subtitle {
           transform: scale(1.2);
   padding-bottom: 0.1rem;
 }
+@media screen and (max-width: 700px) {
+  .carte .navCarte ul {
+    font-size: 0.6rem;
+    width: 100%;
+  }
+}
 .carte .plats {
   width: 60%;
   margin: auto;
@@ -301,6 +327,12 @@ header .subtitle {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "p1 p5" "p2 p6" "p3 p7" "p4 p8";
+}
+@media screen and (max-width: 680px) {
+  .carte .plats ul {
+    grid-template-columns: 1fr;
+    grid-template-areas: "p1 " "p2 " "p3" "p4" "p5" "p6" "p7" " p8";
+  }
 }
 .carte .plats ul li {
   display: grid;
@@ -365,6 +397,7 @@ header .subtitle {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  position: relative;
 }
 .reservation .reservationForm {
   display: -webkit-box;
@@ -372,7 +405,19 @@ header .subtitle {
   display: flex;
   width: 80%;
   height: 60%;
-  margin: auto;
+  margin: 0 125.297px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width: 1080px) {
+  .reservation .reservationForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .reservation .reservationForm .reservationLeft {
   width: 30%;
@@ -386,6 +431,12 @@ header .subtitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 1080px) {
+  .reservation .reservationForm .reservationLeft {
+    width: 100%;
+    height: 50%;
+  }
 }
 .reservation .reservationForm .reservationLeft .containerLeft {
   background-color: rgb(8, 8, 8);
@@ -436,6 +487,17 @@ header .subtitle {
   color: rgb(253, 253, 253);
   font-size: 0.75rem;
 }
+@media screen and (max-width: 1080px) {
+  .reservation .reservationForm h6 {
+    display: none;
+  }
+  .reservation .reservationForm h5 {
+    display: none;
+  }
+  .reservation .reservationForm .logoReservation {
+    display: none;
+  }
+}
 .reservation .reservationForm .reservationRight {
   background-color: rgb(238, 236, 236);
   display: -webkit-box;
@@ -453,6 +515,11 @@ header .subtitle {
           flex-direction: column;
   text-align: center;
   width: 70%;
+}
+@media screen and (max-width: 1080px) {
+  .reservation .reservationForm .reservationRight {
+    width: 100%;
+  }
 }
 .reservation .reservationForm .reservationRight h4 {
   font-family: Allura-regular;
@@ -475,6 +542,25 @@ header .subtitle {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "se da ti" "na ph em";
+}
+@media screen and (max-width: 1080px) {
+  .reservation .reservationForm .reservationRight .rdvform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    height: 80%;
+  }
 }
 .reservation .reservationForm .reservationRight .rdvform .rdvse {
   width: 169px;
@@ -516,6 +602,11 @@ header .subtitle {
   padding-bottom: 10px;
   grid-area: na;
 }
+@media screen and (max-width: 1080px) {
+  .reservation .reservationForm .reservationRight .rdvform .input1 {
+    padding-bottom: 5px;
+  }
+}
 .reservation .reservationForm .reservationRight .rdvform .input2 {
   width: 169px;
   height: 30px;
@@ -526,6 +617,11 @@ header .subtitle {
   padding-bottom: 10px;
   grid-area: ph;
 }
+@media screen and (max-width: 1080px) {
+  .reservation .reservationForm .reservationRight .rdvform .input2 {
+    padding-bottom: 5px;
+  }
+}
 .reservation .reservationForm .reservationRight .rdvform .input3 {
   width: 169px;
   height: 30px;
@@ -535,6 +631,11 @@ header .subtitle {
   border-bottom: 1px rgb(179, 176, 176) solid;
   padding-bottom: 10px;
   grid-area: em;
+}
+@media screen and (max-width: 1080px) {
+  .reservation .reservationForm .reservationRight .rdvform .input3 {
+    padding-bottom: 5px;
+  }
 }
 .reservation .reservationForm .reservationRight .btnrdv {
   background-color: rgb(8, 8, 8);
@@ -582,14 +683,21 @@ header .subtitle {
   grid-template-rows: 50% 50%;
   grid-template-areas: "ni th" "dj th";
 }
-.event .agenda .rdv1 {
+@media screen and (max-width: 680px) {
+  .event .agenda {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "ni" "dj" "th";
+  }
+}
+.event .rdv1 {
   grid-area: ni;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 1fr;
   margin: 5px;
 }
-.event .agenda .rdv1 .rdvDate {
+.event .rdv1 .rdvDate {
   background: url(../img/event-01.jpg) center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,7 +710,7 @@ header .subtitle {
           align-items: center;
   text-align: center;
 }
-.event .agenda .rdv1 .rdvDate .rdvContainer {
+.event .rdv1 .rdvDate .rdvContainer {
   background-color: rgb(30, 30, 30);
   width: 50%;
   height: 50%;
@@ -621,18 +729,18 @@ header .subtitle {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.event .agenda .rdv1 .rdvDate .rdvContainer .rdvDay {
+.event .rdv1 .rdvDate .rdvContainer .rdvDay {
   font-family: Poppins-Light;
   font-weight: 700;
   color: rgb(253, 253, 253);
   font-size: 1.5rem;
 }
-.event .agenda .rdv1 .rdvDate .rdvContainer .rdvMonth {
+.event .rdv1 .rdvDate .rdvContainer .rdvMonth {
   font-family: Poppins-Light;
   color: rgb(253, 253, 253);
   font-size: 0.75rem;
 }
-.event .agenda .rdv1 .rdvInfo {
+.event .rdv1 .rdvInfo {
   background-color: rgb(238, 236, 236);
   font-family: Poppins-Light;
   display: -webkit-box;
@@ -650,10 +758,10 @@ header .subtitle {
           flex-direction: column;
   padding: 5%;
 }
-.event .agenda .rdv1 .rdvInfo .titleInfo {
+.event .rdv1 .rdvInfo .titleInfo {
   font-size: 1rem;
 }
-.event .agenda .rdv1 .rdvInfo .eventInfo {
+.event .rdv1 .rdvInfo .eventInfo {
   color: rgb(166, 163, 163);
   font-size: 0.7rem;
   display: -webkit-box;
@@ -662,27 +770,27 @@ header .subtitle {
   margin-top: 4%;
   margin-bottom: 4%;
 }
-.event .agenda .rdv1 .rdvInfo .eventInfo p {
+.event .rdv1 .rdvInfo .eventInfo p {
   padding-right: 20px;
 }
-.event .agenda .rdv1 .rdvInfo .btnInfo {
+.event .rdv1 .rdvInfo .btnInfo {
   text-transform: uppercase;
   border: none;
   color: rgb(8, 8, 8);
   cursor: pointer;
 }
-.event .agenda .rdv1 .rdvInfo .btnInfo:hover {
+.event .rdv1 .rdvInfo .btnInfo:hover {
   -webkit-text-decoration: underline solid rgb(8, 8, 8) 1px;
           text-decoration: underline solid rgb(8, 8, 8) 1px;
 }
-.event .agenda .rdv2 {
+.event .rdv2 {
   grid-area: dj;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 1fr;
   margin: 5px;
 }
-.event .agenda .rdv2 .rdvDate {
+.event .rdv2 .rdvDate {
   background: url(../img/event-02.jpg) center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -695,7 +803,7 @@ header .subtitle {
           align-items: center;
   text-align: center;
 }
-.event .agenda .rdv2 .rdvDate .rdvContainer {
+.event .rdv2 .rdvDate .rdvContainer {
   background-color: rgb(30, 30, 30);
   width: 50%;
   height: 50%;
@@ -714,18 +822,18 @@ header .subtitle {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.event .agenda .rdv2 .rdvDate .rdvContainer .rdvDay {
+.event .rdv2 .rdvDate .rdvContainer .rdvDay {
   font-family: Poppins-Light;
   font-weight: 700;
   color: rgb(253, 253, 253);
   font-size: 1.5rem;
 }
-.event .agenda .rdv2 .rdvDate .rdvContainer .rdvMonth {
+.event .rdv2 .rdvDate .rdvContainer .rdvMonth {
   font-family: Poppins-Light;
   color: rgb(253, 253, 253);
   font-size: 0.75rem;
 }
-.event .agenda .rdv2 .rdvInfo {
+.event .rdv2 .rdvInfo {
   background-color: rgb(238, 236, 236);
   font-family: Poppins-Light;
   display: -webkit-box;
@@ -743,10 +851,10 @@ header .subtitle {
           flex-direction: column;
   padding: 5%;
 }
-.event .agenda .rdv2 .rdvInfo .titleInfo {
+.event .rdv2 .rdvInfo .titleInfo {
   font-size: 1rem;
 }
-.event .agenda .rdv2 .rdvInfo .eventInfo {
+.event .rdv2 .rdvInfo .eventInfo {
   color: rgb(166, 163, 163);
   font-size: 0.7rem;
   display: -webkit-box;
@@ -755,25 +863,25 @@ header .subtitle {
   margin-top: 4%;
   margin-bottom: 4%;
 }
-.event .agenda .rdv2 .rdvInfo .eventInfo p {
+.event .rdv2 .rdvInfo .eventInfo p {
   padding-right: 20px;
 }
-.event .agenda .rdv2 .rdvInfo .btnInfo {
+.event .rdv2 .rdvInfo .btnInfo {
   text-transform: uppercase;
   border: none;
   color: rgb(8, 8, 8);
   cursor: pointer;
 }
-.event .agenda .rdv2 .rdvInfo .btnInfo:hover {
+.event .rdv2 .rdvInfo .btnInfo:hover {
   -webkit-text-decoration: underline solid rgb(8, 8, 8) 1px;
           text-decoration: underline solid rgb(8, 8, 8) 1px;
 }
-.event .agenda .rdv3 {
+.event .rdv3 {
   grid-area: th;
   background: url(../img/event-03.jpg) center/cover;
   margin: 5px;
 }
-.event .agenda .rdv3 .rdv3Container {
+.event .rdv3 .rdv3Container {
   background-color: rgb(238, 236, 236);
   width: 90%;
   height: 90%;
@@ -783,7 +891,7 @@ header .subtitle {
   margin-left: 5%;
   position: relative;
 }
-.event .agenda .rdv3 .rdv3Container .rdvDate2 {
+.event .rdv3 .rdv3Container .rdvDate2 {
   background-color: rgb(30, 30, 30);
   width: 25%;
   height: 25%;
@@ -806,18 +914,18 @@ header .subtitle {
   left: 40%;
   right: 50%;
 }
-.event .agenda .rdv3 .rdv3Container .rdvDate2 .rdvDay2 {
+.event .rdv3 .rdv3Container .rdvDate2 .rdvDay2 {
   font-family: Poppins-Light;
   font-weight: 700;
   color: rgb(253, 253, 253);
   font-size: 1.5rem;
 }
-.event .agenda .rdv3 .rdv3Container .rdvDate2 .rdvMonth2 {
+.event .rdv3 .rdv3Container .rdvDate2 .rdvMonth2 {
   font-family: Poppins-Light;
   color: rgb(253, 253, 253);
   font-size: 0.75rem;
 }
-.event .agenda .rdv3 .rdv3Container .rdvInfo2 {
+.event .rdv3 .rdv3Container .rdvInfo2 {
   font-family: Poppins-Light;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,12 +942,12 @@ header .subtitle {
           flex-direction: column;
   padding-top: 30%;
 }
-.event .agenda .rdv3 .rdv3Container .rdvInfo2 .titleInfo2 {
+.event .rdv3 .rdv3Container .rdvInfo2 .titleInfo2 {
   font-size: 1rem;
   color: rgb(8, 8, 8);
   width: 80%;
 }
-.event .agenda .rdv3 .rdv3Container .rdvInfo2 .eventInfo2 {
+.event .rdv3 .rdv3Container .rdvInfo2 .eventInfo2 {
   color: rgb(166, 163, 163);
   font-size: 0.7rem;
   display: -webkit-box;
@@ -848,14 +956,14 @@ header .subtitle {
   margin-top: 4%;
   margin-bottom: 4%;
 }
-.event .agenda .rdv3 .rdv3Container .btnInfo2 {
+.event .rdv3 .rdv3Container .btnInfo2 {
   text-transform: uppercase;
   border: none;
   color: rgb(8, 8, 8);
   cursor: pointer;
   padding-top: 7.5%;
 }
-.event .agenda .rdv3 .rdv3Container .btnInfo2:hover {
+.event .rdv3 .rdv3Container .btnInfo2:hover {
   -webkit-text-decoration: underline solid rgb(8, 8, 8) 1px;
           text-decoration: underline solid rgb(8, 8, 8) 1px;
 }
@@ -877,8 +985,13 @@ header .subtitle {
 }
 .conclusion .note .imgEnd {
   border-radius: 50%;
-  height: 18%;
+  height: 60px;
+  width: 60px;
   position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -888,6 +1001,12 @@ header .subtitle {
   margin: auto;
   line-height: 1.75rem;
   padding-bottom: 5%;
+}
+@media screen and (max-width: 480px) {
+  .conclusion .note .textEnd {
+    line-height: 1rem;
+    padding-bottom: 0;
+  }
 }
 .conclusion .note .nameEnd {
   font-weight: 400;
@@ -911,6 +1030,15 @@ header .subtitle {
   bottom: 0;
   left: 0;
   right: 0;
+}
+@media screen and (max-width: 680px) {
+  .conclusion footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: none;
+  }
 }
 .conclusion footer .leftFooter {
   width: 50%;
@@ -951,6 +1079,11 @@ header .subtitle {
   line-height: 1.5rem;
   font-size: 0.8rem;
   padding-bottom: 5%;
+}
+@media screen and (max-width: 680px) {
+  .conclusion footer .leftFooter {
+    display: none;
+  }
 }
 .conclusion footer .rightFooter {
   width: 50%;
@@ -1021,4 +1154,12 @@ header .subtitle {
 .conclusion footer .rightFooter .followRight .networkList .itemRight {
   color: rgb(166, 163, 163);
   padding: 0 20%;
+}
+@media screen and (max-width: 680px) {
+  .conclusion footer .rightFooter {
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 10%;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -13,8 +13,12 @@
             font-family: $font1;
     .imgEnd {
 border-radius: 50%;
-height: 18%;
+height: 60px;
+width: 60px;
 position: absolute;
+left: 50%;
+transform: translateX(-50%);
+top: 0;
 transform: translateY(-50%);
     }
     .textEnd {
@@ -23,6 +27,12 @@ transform: translateY(-50%);
         margin: auto;
         line-height: 1.75rem;
         padding-bottom: 5%;
+    }
+    @media screen and (max-width: 480px) {
+        .textEnd {
+            line-height: 1rem;
+            padding-bottom: 0;
+        }
     }
     .nameEnd {
         font-weight: 400;
@@ -45,6 +55,10 @@ transform: translateY(-50%);
         bottom: 0;
                 left: 0;
         right: 0;
+        @media screen and (max-width:680px) {
+            flex-direction: column;
+            background: none;
+        }
         .leftFooter {
             width: 50%;
             display: flex;
@@ -67,6 +81,11 @@ transform: translateY(-50%);
                 font-size: 0.8rem;
                 padding-bottom: 5%;
             }
+        }
+                            @media screen and (max-width:680px) {
+.leftFooter {
+    display: none;
+}
         }
         .rightFooter {
             width: 50%;
@@ -118,6 +137,14 @@ transform: translateY(-50%);
             }
          }
  
+        }
+                            @media screen and (max-width:680px) {
+.rightFooter {
+    width: 100%;
+    height: 100%;
+            padding-top: 0;
+        padding-bottom: 10%;
+}
         }
     }
 }
